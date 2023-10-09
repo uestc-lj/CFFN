@@ -1,0 +1,19 @@
+python ../train.py --outdir ./checkpoint \
+--train_path ../resource/dataset/Weibo/train.csv \
+--test_path ../resource/dataset/Weibo/test.csv \
+--bert_path ../resource/bert/bert-base-chinese \
+--image_path ../resource/dataset/MM17-WeiboRumorSet/origin_images \
+--batchsize 128 \
+--num_train_epochs 50 \
+--learning_rate 0.001 \
+--dataset weibo \
+--max_words 200 \
+--embed_size 256 \
+--att_hid 2048 \
+--n_head 8 \
+--thres 0.0 \
+--lambda_softmax 1 \
+--tradeoff 0.8 \
+--drop_rate 0.1 \
+--text_aggregation cnn \
+--image_aggregation fc
