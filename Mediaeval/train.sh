@@ -1,6 +1,6 @@
 python ../train.py --outdir ./checkpoint \
---train_path ../../resource/dataset/Mediaeval/train.csv \
---test_path ../../resource/dataset/Mediaeval/test.csv \
+--train_path ../resource/dataset/Mediaeval/train.csv \
+--test_path ../resource/dataset/Mediaeval/test.csv \
 --bert_path ../resource/bert/bert_base \
 --image_path ../resource/dataset/MediaEval/images \
 --batchsize 128 \
